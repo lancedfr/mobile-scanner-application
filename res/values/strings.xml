@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scanner</string>
+    <string name="title_section1">Scan Product</string>
+    <string name="title_section2">Add Product</string>
+    <string name="title_section3">View Products</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scanner">ScannerActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_new_product_scanner">NewProductScannerActivity</string>
+
+</resources>
