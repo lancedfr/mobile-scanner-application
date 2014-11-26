@@ -11,43 +11,43 @@ import android.widget.Button;
 
 public class Fragment1 extends Fragment {
 
-  public Fragment1() {
-    // Required empty public constructor
-  }
+    public Fragment1() {
+        // Required empty public constructor
+    }
 
-  public static Fragment1 newInstance(String param1, String param2) {
-    Fragment1 fragment = new Fragment1();
-    Bundle args = new Bundle();
+    public static Fragment1 newInstance(String param1, String param2) {
+        Fragment1 fragment = new Fragment1();
+        Bundle args = new Bundle();
 
-    fragment.setArguments(args);
-    return fragment;
-  }
+        fragment.setArguments(args);
+        return fragment;
+    }
 
-  @Override
-  public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    getActivity().getActionBar().hide();
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getActivity().getActionBar().hide();
 
-    View decorView = getActivity().getWindow().getDecorView();
-    int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-    decorView.setSystemUiVisibility(uiOptions);
-  }
+        View decorView = getActivity().getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
 
-  @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-    View rootView = inflater.inflate(R.layout.fragment_fragment1, container, false);
-    Button b = (Button) rootView.findViewById(R.id.button1);
-    b.setOnClickListener(new OnClickListener() {
-      public void onClick(View v) {
-        Intent intent = new Intent(getActivity(), ScannerActivity.class);
-        startActivity(intent);
+        View rootView = inflater.inflate(R.layout.fragment_fragment1, container, false);
+        Button b = (Button) rootView.findViewById(R.id.button1);
+        b.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ScannerActivity.class);
+                startActivity(intent);
 
-      }
+            }
 
-    });
+        });
 
-    return rootView;
-  }
+        return rootView;
+    }
 
 }
